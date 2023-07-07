@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Viaoda+Libre&display=swap");
+body {
+  background-color: #F7F0D4;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-weight: bold;
+}
+body #header {
+  margin-bottom: 25px;
+  color: #110934;
+}
+body #clock {
+  background-color: #3214B8;
+  color: #FCCB1A;
+  font-size: 32px;
+  outline: 5px solid black;
+  padding: 5px;
+  width: 400px;
+}
+body #clock #timer-controls {
+  background-color: #4424D6;
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+body #clock #timer-controls #break-label, body #clock #timer-controls #break-length, body #clock #timer-controls #session-label, body #clock #timer-controls #session-length {
+  padding: 5px;
+  margin: 5px;
+}
+body #clock #timer-controls #break-length, body #clock #timer-controls #session-length {
+  width: 30px;
+}
+body #clock button {
+  background: none;
+  border: none;
+  color: #110934;
+  margin: 20px;
+  outline: none;
+}
+body #footer {
+  margin-top: 25px;
+  color: #110934;
+}

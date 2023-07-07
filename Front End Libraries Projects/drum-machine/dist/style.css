@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Sigmar+One&family=ZCOOL+KuaiLe&display=swap");
+body {
+  user-select: none;
+  background-color: #000000;
+  font-family: "Sigmar One", cursive;
+}
+
+#application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  outline: 5px solid #FFFF00;
+  width: 660px;
+  text-align: center;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine #display {
+  background-color: #FF0000;
+  width: 200px;
+  color: white;
+  margin: 10px;
+  outline: 5px solid #000000;
+  font-family: "Limelight", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+#drum-machine #display p {
+  margin: auto;
+}
+#drum-machine #drumPadBank {
+  width: 400px;
+  height: 320px;
+  display: inline-block;
+  margin: 20px;
+}
+#drum-machine #drumPadBank .drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
+#header {
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+#footer {
+  color: #FFFFFF;
+  margin-top: 50px;
+}

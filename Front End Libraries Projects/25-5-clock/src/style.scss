@@ -1,0 +1,59 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Viaoda+Libre&display=swap');
+
+// Variables
+$bodyBackgroundColor: #F7F0D4;
+$textColor: #110934;
+$clockBackgroundColor: #3214B8;
+$clockTextColor: #FCCB1A;
+$controlBackgroundColor: #4424D6;
+$buttonColor: #110934;
+
+body {
+  background-color: $bodyBackgroundColor;
+  font-family: 'Goudy Bookletter 1911', sans-serif;
+  font-weight: bold;
+  
+  #header {
+    margin-bottom: 25px;
+    color: $textColor;
+  }
+  
+  #clock {
+    background-color: $clockBackgroundColor;
+    color: $clockTextColor;
+    font-size: 32px;
+    outline: 5px solid black;
+    padding: 5px;
+    width: 400px;
+
+    #timer-controls {
+      background-color: $controlBackgroundColor;
+      font-family: 'Viaoda Libre', sans-serif;
+      font-size: 24px;
+      margin-bottom: 30px;
+      
+      #break-label, #break-length, #session-label, #session-length {
+        padding: 5px;
+        margin: 5px;
+      }
+      
+      #break-length, #session-length {
+        width: 30px;
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: $buttonColor;
+      margin: 20px;
+      outline: none;
+    }
+  }
+
+  #footer {
+    margin-top: 25px;
+    color: $textColor;
+  }
+}

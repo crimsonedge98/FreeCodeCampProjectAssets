@@ -1,0 +1,88 @@
+// FontFamily
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Teko:wght@700&display=swap');
+
+// Variables
+$headerColor: #804080;
+$calculatorBackground: #400040;
+$footerColor: #FFFFFF;
+$formulaDisplay: #400080;
+$outputDisplay: #000000;
+$textDisplay: #FFFFFF;
+$buttonColor: #FFC0FF;
+$buttonText: #000000;
+$buttonTextHighlight: #400000;
+$equalsButton: #C000C0;
+
+body {
+  background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  #header {
+    color: $headerColor;
+    margin-bottom: 25px;
+  }
+
+  #calculator {
+    background-color: $calculatorBackground;
+    border: 5px solid pink;
+    opacity: 0.8;
+    padding: 5px;
+    width: 380px;
+
+    #formula {
+      background-color: $formulaDisplay;
+      color: $textDisplay;
+      font-family: 'DotGothic16', sans-serif;
+      height: 30px;
+      margin-bottom: 5px;
+      padding: 5px;
+      text-align: left;
+    }
+
+    #display {
+      background-color: $outputDisplay;
+      color: $textDisplay;
+      font-family: 'DotGothic16', sans-serif;
+      height: 30px;
+      margin-bottom: 5px;
+      padding: 5px;
+      text-align: right;
+
+    }
+
+    button {
+      background: $buttonColor;
+      border: none;
+      color: $buttonText;
+      cursor: default;
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+      height: 65px;
+      margin: 5px;
+      outline: 1px solid black;
+      position: relative;
+      width: 80px;
+      
+      &:hover {
+        color: $buttonTextHighlight;
+        cursor: pointer;
+        outline: 5px solid red;
+        z-index: 3;
+      }
+    }
+
+    .largeButton {
+      background: $equalsButton;
+      height: 65px;
+      width: 170px;
+      
+    }
+  }
+
+  #footer {
+    color: $footerColor;
+    margin-top: 25px;
+  }
+}

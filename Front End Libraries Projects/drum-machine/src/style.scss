@@ -1,0 +1,83 @@
+// Colors
+$bodyBgColor: #000000;
+$drumBgColor: #FFFFFF;
+$padBgColor: #FF0000;
+$textColor: #FFFFFF;
+
+// Padbank and Drumpad sizes
+$padWidth: 100px;
+$padHeight: 80px;
+
+// Font Styles
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Sigmar+One&family=ZCOOL+KuaiLe&display=swap');
+
+body {
+  user-select: none;
+  background-color: $bodyBgColor;
+  font-family: 'Sigmar One', cursive;
+}
+
+#application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  outline: 5px solid #FFFF00;
+  width: 660px;
+  text-align: center;
+  background-color: $drumBgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  #display {
+    background-color: #FF0000;
+    width: 200px;
+    color: white;
+    margin: 10px;
+    outline: 5px solid #000000;
+    font-family: 'Limelight', cursive;
+    font-size: 20px;
+    text-align: center;
+    
+    p {
+      margin: auto;
+    }
+  }
+  
+  #drumPadBank {
+    width: $padWidth * 4;
+    height: $padHeight * 4;
+    display: inline-block;
+    margin: 20px;
+    
+    .drum-pad {
+      position: relative;
+      float: left;
+      width: $padWidth;
+      height: $padHeight;
+      margin: 10px;
+      border-radius: 5px;
+      padding: 35px;
+      box-sizing: border-box;
+      cursor: pointer;
+      background-color: $padBgColor;
+      color: $textColor;
+      font-family: 'ZCOOL KuaiLe', cursive;
+    }
+  }
+}
+
+#header {
+  color: $textColor;
+  margin-bottom: 50px;
+}
+
+#footer {
+  color: $textColor;
+  margin-top: 50px;
+}
