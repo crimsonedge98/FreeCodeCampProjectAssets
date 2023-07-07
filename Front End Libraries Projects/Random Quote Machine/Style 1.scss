@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+h1 {
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#quote-box {
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+  width: 70%;
+  div {
+    margin: 5%;
+  }
+  i {
+    font-size: 32px;
+  }
+  #text {
+    font-size: 32px;
+    font-family: "Imbue", serif;
+  }
+  #author,
+  #series {
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+  }
+  #new-quote {
+    color: white;
+  }
+}
+
+footer {
+  p {
+    color: white;
+  }
+}
