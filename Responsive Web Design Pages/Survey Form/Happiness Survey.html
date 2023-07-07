@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style 1.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Happiness Survey Form</h1>
+      <p id="description">Thank you for participating in this year's analysis of happiness meter</p>
+    </header>
+    <br />
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: </label>
+      <input id="name" type="text" name="name" placeholder="Name" required/>
+      <label id="email-label" for="email">Email: </label>
+      <input id="email" type="email" name="email" placeholder="Email" required />
+      <label id="number-label" for="number">Age: </label>
+      <input id="number" type="number" placeholder="Age" min="14" max="100" name="age"/>
+      <label for="dropdown">Occupation: </label>
+      <select id="dropdown" name="job">
+        <option disabled="" selected="" value="">Select Current Job</option>
+        <option value="student">Student</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="engineer">Engineer</option>
+        <option value="programmer">Programmer</option>
+        <option value="doctor">Doctor</option>
+        <option value="teacher">Teacher</option>
+        <option value="actor">Actor</option>
+        <option value="singer">Singer</option>
+        <option value="artist">Artist</option>
+        <option value="writer">Writer</option>
+        <option value="entrepreneur">Entrepreneur</option>
+      </select>
+      <fieldset>
+        <legend>How happy are you in general?</legend>
+        <label><input type="radio" value="very low" name="happiness-meter" />Not much happiness</label>
+        <label><input type="radio" value="low" name="happiness-meter" />Few moments of happiness</label>
+        <label><input type="radio" value="neither" name="happiness-meter" />So-so</label>
+        <label><input type="radio" value="high" name="happiness-meter" />Many moments of happiness</label>
+        <label><input type="radio" value="very high" name="happiness-meter" />Very exciting and overflowing with joy</label>
+      </fieldset>
+      <fieldset>
+        <legend>What makes you happy?</legend>
+        <label><input type="checkbox" value="family&friends" name="happiness-method" />Family & Friends</label>
+        <label><input type="checkbox" value="career" name="happiness-method" />Career</label>
+        <label><input type="checkbox" value="money" name="happiness-method" />Money</label>
+        <label><input type="checkbox" value="fame" name="happiness-method" />Fame</label>
+        <label><input type="checkbox" value="life-experiences" name="happiness-method" />Life Experiences</label>
+      </fieldset>
+      <p>Additional Comments:</p>
+      <textarea id="comments" placeholder="Enter your comments here"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

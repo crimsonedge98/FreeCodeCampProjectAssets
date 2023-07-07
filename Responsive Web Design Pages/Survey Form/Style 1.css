@@ -1,0 +1,75 @@
+body {
+  background-color: pink;
+  color: white;
+  font-family: pacifico;
+}
+
+header {
+  background-color: hsl(318, 60%, 85%);
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  box-shadow: 10px 10px 10px brown;
+}
+
+#name, #email, #number, #dropdown, #happiness-meter, #happiness-method {
+  min-height: 30px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  padding: 16px;
+}
+
+#description {
+  padding: 16px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 500px;
+  margin: auto;
+  background-color: hsl(318, 60%, 90%);
+  border-radius: 5%;
+  color: brown;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px brown;
+}
+
+#comments {
+  margin-bottom: 20px;
+  min-height: 130px;
+}
+
+#submit {
+  width: 120px;
+  margin: auto;
+  font-family: pacifico;
+  font-size: 30px;
+  background-color: red;
+  border-radius: 15%;
+}
+
+#submit:hover {
+  transform: scale(1.25);
+  animation-name: submitbutton;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes submitbutton {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}

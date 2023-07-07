@@ -1,0 +1,72 @@
+body {
+  background-color: pink;
+}
+
+#navbar {
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  border-right: 3px solid;
+  background-color: brown;
+}
+
+#navbar header {
+  font-size: 30px;
+  text-align: center;
+  color: pink;
+}
+
+#navbar ul {
+  list-style-type: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+#navbar ul li {
+  border-top: 1px solid;
+  position: relative;
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: pink;
+}
+
+#navbar ul li:hover {
+  background-color: green;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.main-section header {
+  font-size: 24px;
+}
+
+.main-section article {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+#Additional_References ul li a {
+  text-decoration: none;
+}
+
+@media (max-width: 200px) {
+  body {
+    background-color: white;
+  }
+}

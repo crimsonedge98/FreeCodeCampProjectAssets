@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Style 1.css" />
+  </head>
+	<body>
+		<nav id="navbar">
+			<header>Java</header>
+			<ul>
+				<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+				<li><a class="nav-link" href="#OOPS_Basic_Concepts">OOPS Basic Concepts</a></li>
+				<li><a class="nav-link" href="#Variables_and_Methods">Variables and Methods</a></li>
+				<li><a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a></li>
+				<li><a class="nav-link" href="#Additional_References">Additional References</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section id="Introduction" class="main-section">
+				<header>Introduction</header>
+	      <article>
+	        <p>This is just a project of creating a technical documentation page. The information in here is not too accurate as this is made in a rush.</p>
+	        <p>Java is a class-based object-oriented programming language. The term object-oriented means that the programming language utilizes the concept of objects. In simple terms, the programming language revolves around creating objects and making connections in how they interact with one another. Java is used to develop multitude types applications for mobile, desktop, and web.</p>
+	        <p>The following are various reasons to learn and use Java:</p>
+	        <ul>
+	          <li>It is cross-platform (capable of working in multiple different operating systems or devices)</li>
+	          <li>It is easy and simple to learn and use</li>
+	          <li>It is developed for security, speed, and power</li>
+	          <li>It has a large community</li>
+	        </ul>
+	      </article>
+			</section>
+			<section id="OOPS_Basic_Concepts" class="main-section">
+				<header>OOPS Basic Concepts</header>
+	      <article>
+	        <p>There are four basic concepts for Object-Oriented Programming System:</p>
+	        <ul>
+	          <li>Encapsulation</li>
+	          <li>Inheritance</li>
+	          <li>Abstraction</li>
+	          <li>Polymorphism</li>
+	        </ul>
+	        <p>Knowing each of these concepts can provide an easier understanding on the programming language that utilizes OOPS.</p>
+	        <p>Encapsulation is the concept of wrapping a section of a data or code to make it inaccessible for other codes. They can only be accessed through specific ways that is coded into the program. This helps in having total control in what data is accessed and what is not.</p>
+	        <p>Inheritance is the concept of reusing the code by inheriting the properties and behavior of another program. This is useful for developing programs that utilizes the same operations and lessens developers and programmers time and burden in the coding process.</p>
+	        <p>Abstraction is the concept of hiding relevant complex information and provide only the surface idea. For example, when utilizing a device such as a smartphone, you interact with it through taps and swipes on the screen. You don't need to know the inner workings of how such things work other than how to utilize it for a specific task.</p>
+	        <p>Polymorphism is the concept for one thing to take multiple forms. This typically utilizes the IS-A test. For example, a Girl IS-A Person, IS-A Omnivore, and IS-A Human. Thus, a girl can be considered as a person, an omnivore, or a human.
+	        </p>
+	      </article>
+			</section>
+			<section id="Variables_and_Methods" class="main-section">
+				<header>Variables and Methods</header>
+	      <article>
+	        <p>A variable is the storage representation of data. These variables are then divided into different data types that store the kind of information. You can imagine variables as the storage boxes that contains specific information and data types as the labels of the type of information taped on these storage boxes.</p>
+	        <code>
+	          int x = 10;
+	          <br />
+	          double y = 39.45;
+	          <br />
+	          char letter = 'A';
+	          <br />
+	          String name = "Java";
+	        </code>
+	        <p>The first words in each line are the data types. After those are the names of the variables. The equal operator assigns the value, which are the numbers and letters after it, to the variables. A semicolon is placed after the value to make sure that the instruction of creating this variable is complete. A semicolon is very important to be placed after every line of code to ensure that the compiler knows the instruction is complete. The data types in each line are the different types.</p>
+	        <p>Both int and double are used to assign numerical values. The int data type is used to assign integer values while the double data type is used to assign decimal values. The char and String data types are used to store letter values. The char data type is used to store single letter values while the String data type is used to store word values. The values for these data types must be enclosed with either a single or double quotations. Although it is best habit to enclosed char values with single quotation marks and String values with double quotation marks.</p>
+	        <p>A method, also known as a function, is the behavior or actions of an object. As previously explained, Java is an object-oriented programming language, meaning it utilizes the concepts of objects. If variables store the data of information about the object, then methods are the object's actions and behavior coded in by the programmer. For example, the object Person can run, walk, and talk. The programmer will typically code those actions for the object Person.</p>
+	        <code>
+	          void run() {
+	          <br />
+	          System.out.println("The person is running!");
+	          <br />
+	          }
+	        </code>
+	        <p>The small code above is the run() method. This action prints out a message that a person is running.</p>
+	      </article>
+			</section>
+			<section id="Classes_and_Objects" class="main-section">
+				<header>Classes and Objects</header>
+	      <article>
+	        <p>A class is simply the template of an object. It typically contains the properties (variables) and the actions (methods) of the object. A programmer uses this template to create multiple objects of the same type.</p>
+	        <p>An object is the creation or the instance of template (class). A special method called constructor is used to create an object and initialize its variables. A constructor must always have the same name as the class.</p>
+	        <code>
+	          class Person {
+	          <br />
+	          String name;
+	          <br />
+	          int age;
+	          <br />
+	          Person (String name, int age) {
+	          <br />
+	          this.name = name;
+	          <br />
+	          this.age = age;
+	          <br />
+	          }
+	          <br />
+	          void printPerson() {
+	          <br />
+	          System.out.println("Name: " + name);
+	          <br />
+	          System.out.println("Age: " + age);
+	          <br />
+	          }
+	          <br />
+	          }
+	        </code>
+	        <p>The code above is class Person to create a Person object. A Person object has two variables name and age. Both name and age are needed to be initialized to create a Person object.</p>
+	        <p>To create an object, the constructor is called to initialize the object's variables.</p>
+	        <code>
+	          Person java = new Person("Person", 25);
+	        </code>
+	        <p>The first word in the code is the name of the class. The second word is the name of the object. An equal operator is used to assign the values of the object to be stored. The new keyword is used to create objects. Finally, the Person constructor is used to initialize the object's variables. In this case, the values "Person" and 25 will be stored in the name and age variables, respectively.
+	        <code>
+	          java.printPerson();
+	        </code>
+	        <p>For an object to use its method, a dot operator is used. In this case, the java object will use the printPerson() method to print out the name and age of the object.</p>
+	      </article>
+			</section>
+			<section id="Additional_References" class="main-section">
+				<header>Additional References</header>
+	      <article>
+	        <ul>
+	          <li><a href="https://www.tutorialspoint.com/java/index.htm" target="_blank">TutorialsPoint</a></li>
+	          <li><a href="https://www.w3schools.com/java/default.asp" target="_blank">W3Schools</a></li>
+	        </ul>
+	      </article>
+			</section>
+		</main>
+	</body>
+</html>
+
